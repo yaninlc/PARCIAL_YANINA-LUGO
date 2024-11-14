@@ -93,7 +93,95 @@ header nav ul li a:hover {
     transform: scale(1);
 }
 
-/* Estilo de los iconos sociales en la sección de contacto */
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Fondo suave */
+    color: #333; /* Texto oscuro */
+    padding: 0;
+    margin: 0;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #d2a8e4; /* Rosa suave */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e1b1cd; /* Rosa claro */
+}
+
+/* Estilo para el perfil */
+.perfil {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.perfil h1 {
+    color: #d02d79; /* Rosa fuerte */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.perfil p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo para la tabla de carrera profesional */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacio entre celdas */
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d02d79; /* Bordes rosa entre celdas */
+}
+
+table th {
+    background-color: #d2a8e4; /* Fondo rosa suave para los encabezados */
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f8d3e5; /* Fondo rosa claro para las celdas */
+}
+
+/* Estilo para los enlaces de contacto */
 .contacto {
     margin-top: 30px;
     display: flex;
@@ -122,6 +210,29 @@ header nav ul li a:hover {
 .icono-social:active {
     transform: scale(1);
 }
+
+/* Enlace de CV en PDF */
+.cv-link {
+    display: block;
+    margin-top: 20px;
+    color: #d02d79; /* Rosa fuerte */
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.cv-link:hover {
+    color: #e1b1cd; /* Rosa claro */
+}
+
+/* Pie de página */
+footer {
+    background-color: #d2a8e4; /* Rosa suave */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
 
 /* Estilos para la galería de imágenes */
 .galeria {
