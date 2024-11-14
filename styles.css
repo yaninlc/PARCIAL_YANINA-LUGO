@@ -292,35 +292,40 @@ header nav ul li a:hover {
 
 /* Estilo principal del Blog */
 .blog {
-    margin: 40px 10%;
+    margin: 40px auto;  /* Centrado y márgenes reducidos */
     padding: 20px;
     background-color: #f8d3e5; /* Rosa claro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 800px; /* Máximo ancho para que no se vea demasiado grande */
 }
 
+/* Título del Blog */
 .blog h1 {
     color: #d02d79; /* Rosa fuerte */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Estilo para cada paso de la carrera */
 .paso {
     background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 15px 0;
+    padding: 15px;  /* Padding reducido */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0; /* Inicialmente oculto para animación */
+    transition: all 0.3s ease;
 }
 
+/* Estilo para los títulos de los pasos */
 .paso h2 {
     color: #d02d79; /* Rosa fuerte */
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
+/* Estilo para las imágenes de los pasos */
 .paso img {
     width: 100%;
     height: auto;
@@ -328,16 +333,18 @@ header nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+/* Estilo para los párrafos de los pasos */
 .paso p {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Texto más pequeño */
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* Botón de "Leer más" */
 .paso button {
     background-color: #d02d79; /* Rosa fuerte */
     color: white;
-    padding: 10px 20px;
+    padding: 8px 15px;  /* Tamaño reducido */
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -360,12 +367,6 @@ footer {
     text-align: center;
     color: white;
     font-size: 1rem;
-}
-
-/* Estilo para los botones de "Leer más" */
-button {
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 /* Animación de desplazamiento suave utilizando ScrollReveal */
