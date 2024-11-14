@@ -5,10 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Fondo suave */
-    color: #333; /* Texto oscuro */
+    background-color: #fbe8eb; /* Rosa pastel claro */
+    color: #333;
     padding: 0;
     margin: 0;
 }
@@ -22,7 +23,7 @@ body {
 
 /* Encabezado y navegación */
 header {
-    background-color: #d2a8e4; /* Rosa suave */
+    background-color: #f28ab2; /* Rosa pastel fuerte */
     padding: 20px 0;
     text-align: center;
 }
@@ -30,10 +31,11 @@ header {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -50,7 +52,7 @@ header nav ul li a:hover {
     color: #e1b1cd; /* Rosa claro */
 }
 
-/* Sección principal de bienvenida */
+/* Estilo para la bienvenida */
 .bienvenida {
     background-color: #f8d3e5; /* Rosa claro */
     padding: 50px 20px;
@@ -72,6 +74,7 @@ header nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* Botones */
 .boton {
     background-color: #d02d79; /* Rosa fuerte */
     color: white;
@@ -93,95 +96,77 @@ header nav ul li a:hover {
     transform: scale(1);
 }
 
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Fondo suave */
-    color: #333; /* Texto oscuro */
-    padding: 0;
-    margin: 0;
-}
-
-/* Encabezado y navegación */
-header {
-    background-color: #d2a8e4; /* Rosa suave */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #e1b1cd; /* Rosa claro */
-}
-
-/* Estilo para el perfil */
-.perfil {
+/* Estilo de los artículos del Blog */
+.blog {
     margin: 40px auto;
-    width: 80%;
-    max-width: 1000px;
+    padding: 20px;
+    background-color: #f8d3e5; /* Rosa claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 800px; /* Máximo ancho para que no se vea demasiado grande */
 }
 
-.perfil h1 {
+/* Título del Blog */
+.blog h1 {
     color: #d02d79; /* Rosa fuerte */
-    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.perfil p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 30px;
+/* Estilo para cada paso de la carrera */
+.paso {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Inicialmente oculto para animación */
+    transition: all 0.3s ease;
 }
 
-/* Estilo para la tabla de carrera profesional */
-table {
+/* Estilo para los títulos de los pasos */
+.paso h2 {
+    color: #d02d79; /* Rosa fuerte */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes de los pasos */
+.paso img {
     width: 100%;
-    border-collapse: collapse; /* Elimina espacio entre celdas */
-    margin-bottom: 30px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-table th, table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #d02d79; /* Bordes rosa entre celdas */
+/* Estilo para los párrafos de los pasos */
+.paso p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-table th {
-    background-color: #d2a8e4; /* Fondo rosa suave para los encabezados */
+/* Botón de "Leer más" */
+.paso button {
+    background-color: #d02d79; /* Rosa fuerte */
     color: white;
-    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-table td {
-    background-color: #f8d3e5; /* Fondo rosa claro para las celdas */
+.paso button:hover {
+    background-color: #e1b1cd; /* Rosa claro */
 }
 
-/* Estilo para los enlaces de contacto */
+.paso button:active {
+    transform: scale(1);
+}
+
+/* Estilo de los iconos sociales */
 .contacto {
     margin-top: 30px;
     display: flex;
@@ -192,7 +177,7 @@ table td {
 .icono-social {
     width: 50px;
     height: 50px;
-    background-color: #d02d79; /* Rosa fuerte */
+    background-color: #f28ab2; /* Rosa pastel */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,30 +196,7 @@ table td {
     transform: scale(1);
 }
 
-/* Enlace de CV en PDF */
-.cv-link {
-    display: block;
-    margin-top: 20px;
-    color: #d02d79; /* Rosa fuerte */
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.cv-link:hover {
-    color: #e1b1cd; /* Rosa claro */
-}
-
-/* Pie de página */
-footer {
-    background-color: #d2a8e4; /* Rosa suave */
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-}
-
-
-/* Estilos para la galería de imágenes */
+/* Galería de imágenes */
 .galeria {
     margin-top: 40px;
     text-align: center;
@@ -281,205 +243,6 @@ footer {
     visibility: visible;
 }
 
-/* Sección de Blog */
-.blog {
-    margin-top: 40px;
-}
-
-.paso {
-    background-color: #f8d3e5;
-    margin: 20px 0;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.paso:hover {
-    transform: translateY(-10px);
-}
-
-.paso h2 {
-    color: #d02d79; /* Rosa fuerte */
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.paso p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.paso img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.paso button {
-    background-color: #d02d79; /* Rosa fuerte */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.paso button:hover {
-    background-color: #e1b1cd; /* Rosa claro */
-}
-
-.paso button:active {
-    transform: scale(1);
-}
-
-/* Pie de página */
-footer {
-    background-color: #d2a8e4; /* Rosa suave */
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-}
-
-/* Animación de rotación del texto */
-@keyframes rotar {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-
-
-
-
-/* Reset de márgenes y padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo del encabezado y navegación */
-header {
-    background-color: #d2a8e4; /* Rosa suave */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #e1b1cd; /* Rosa claro */
-}
-
-/* Estilo principal del Blog */
-.blog {
-    margin: 40px auto;  /* Centrado y márgenes reducidos */
-    padding: 20px;
-    background-color: #f8d3e5; /* Rosa claro */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 800px; /* Máximo ancho para que no se vea demasiado grande */
-}
-
-/* Título del Blog */
-.blog h1 {
-    color: #d02d79; /* Rosa fuerte */
-    margin-bottom: 20px;
-}
-
-/* Estilo para cada paso de la carrera */
-.paso {
-    background-color: #fff;
-    margin: 15px 0;
-    padding: 15px;  /* Padding reducido */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Inicialmente oculto para animación */
-    transition: all 0.3s ease;
-}
-
-/* Estilo para los títulos de los pasos */
-.paso h2 {
-    color: #d02d79; /* Rosa fuerte */
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-/* Estilo para las imágenes de los pasos */
-.paso img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* Estilo para los párrafos de los pasos */
-.paso p {
-    font-size: 1rem; /* Texto más pequeño */
-    color: #333;
-    margin-bottom: 15px;
-}
-
-/* Botón de "Leer más" */
-.paso button {
-    background-color: #d02d79; /* Rosa fuerte */
-    color: white;
-    padding: 8px 15px;  /* Tamaño reducido */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.paso button:hover {
-    background-color: #e1b1cd; /* Rosa claro */
-}
-
-.paso button:active {
-    transform: scale(1);
-}
-
-/* Pie de página */
-footer {
-    background-color: #d2a8e4; /* Rosa suave */
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-}
-
 /* Animación de desplazamiento suave utilizando ScrollReveal */
 @keyframes revealUp {
     0% {
@@ -490,4 +253,18 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.paso {
+    animation: revealUp 1s ease-out forwards; /* Activamos la animación de subida */
+    opacity: 0; /* Inicialmente oculto */
+}
+
+/* Pie de página */
+footer {
+    background-color: #f28ab2; /* Rosa pastel fuerte */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
 }
