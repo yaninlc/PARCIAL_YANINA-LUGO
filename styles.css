@@ -240,3 +240,142 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+
+
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo del encabezado y navegación */
+header {
+    background-color: #d2a8e4; /* Rosa suave */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e1b1cd; /* Rosa claro */
+}
+
+/* Estilo principal del Blog */
+.blog {
+    margin: 40px 10%;
+    padding: 20px;
+    background-color: #f8d3e5; /* Rosa claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog h1 {
+    color: #d02d79; /* Rosa fuerte */
+    margin-bottom: 30px;
+}
+
+/* Estilo para cada paso de la carrera */
+.paso {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Inicialmente oculto para animación */
+}
+
+.paso h2 {
+    color: #d02d79; /* Rosa fuerte */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.paso img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.paso button {
+    background-color: #d02d79; /* Rosa fuerte */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paso button:hover {
+    background-color: #e1b1cd; /* Rosa claro */
+}
+
+.paso button:active {
+    transform: scale(1);
+}
+
+/* Pie de página */
+footer {
+    background-color: #d2a8e4; /* Rosa suave */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Estilo para los botones de "Leer más" */
+button {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Animación de desplazamiento suave utilizando ScrollReveal */
+@keyframes revealUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

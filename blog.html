@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Profesional - Kim Ye-Ji</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script> <!-- Biblioteca para animación -->
 </head>
 <body>
     <header>
@@ -21,13 +22,27 @@
     <main>
         <section class="blog">
             <h1>Blog Profesional</h1>
+            
             <article class="paso" id="paso1">
                 <h2>Comienzos de su carrera</h2>
                 <img src="comienzos.jpg" alt="Kim en sus primeros años">
-                <p>Kim comenzó su carrera a los 18 años, en competencias locales...</p>
+                <p>Kim comenzó su carrera a los 18 años, en competencias locales, destacándose rápidamente por su habilidad en el campo...</p>
                 <button onclick="window.open('https://link-a-pagina.com')">Leer más</button>
             </article>
-            <!-- Más pasos de carrera -->
+
+            <article class="paso" id="paso2">
+                <h2>Ingreso a un equipo profesional</h2>
+                <img src="equipo.jpg" alt="Kim con su equipo profesional">
+                <p>A los 22 años, Kim fue reclutada por un equipo profesional, lo que marcó un hito en su carrera como atleta profesional...</p>
+                <button onclick="window.open('https://link-a-pagina.com')">Leer más</button>
+            </article>
+
+            <article class="paso" id="paso3">
+                <h2>Competiciones Internacionales</h2>
+                <img src="competencias.jpg" alt="Kim en competiciones internacionales">
+                <p>Kim ha participado en varias competencias internacionales, logrando medallas y distinciones importantes que consolidaron su nombre a nivel mundial...</p>
+                <button onclick="window.open('https://link-a-pagina.com')">Leer más</button>
+            </article>
         </section>
     </main>
     
@@ -35,5 +50,17 @@
         <p>&copy; 2024 Yanina Lugo</p>
         <p>Fecha de creación: Noviembre 2024</p>
     </footer>
+
+    <script>
+        // Animación de desplazamiento suave utilizando ScrollReveal
+        ScrollReveal().reveal('.paso', {
+            duration: 1000,
+            distance: '50px',
+            origin: 'bottom',
+            opacity: 0,
+            easing: 'ease-out',
+            interval: 200 // Añade un intervalo para cada artículo
+        });
+    </script>
 </body>
 </html>
